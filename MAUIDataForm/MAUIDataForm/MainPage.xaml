@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:dataForm="clr-namespace:Syncfusion.Maui.DataForm;assembly=Syncfusion.Maui.DataForm"
+             xmlns:local="clr-namespace:MAUIDataForm"
+             x:Class="MAUIDataForm.MainPage">
+
+<Grid>
+    <Image Source="feedbackform.png" Aspect="Fill" />
+    <Grid HorizontalOptions="Center" 
+          VerticalOptions="Center" 
+          ColumnSpacing="20">
+          
+        <Frame HasShadow="False" 
+                       BackgroundColor="{DynamicResource SfDataFormNormalBackground}"
+                       CornerRadius="10"
+                       MaximumHeightRequest="550"
+                       VerticalOptions="Start"
+                       HorizontalOptions="Center" 
+                       WidthRequest="550" 
+                       Padding="10">
+
+            <Grid BackgroundColor="{DynamicResource SfDataFormNormalBackground}">
+                <Grid.RowDefinitions>
+                      <RowDefinition Height="40"/>
+                      <RowDefinition Height="0.8*"/>
+                      <RowDefinition Height="1"/>
+                      <RowDefinition Height="75"/>
+                </Grid.RowDefinitions>
+
+                <Grid.BindingContext>
+                      <local:FeedbackViewModel/>
+                </Grid.BindingContext>
+
+                <Label Text="Product Feedback" 
+                             TextColor="Black" 
+                             FontSize="Subtitle" 
+                             FontAttributes="Bold" 
+                             VerticalTextAlignment="Center"
+                             HorizontalTextAlignment="Center"/>
+                       
+                <dataForm:SfDataForm x:Name="feedbackForm"
+                                                           Grid.RowSpan="1"
+                                                           Grid.Row="1"
+                                                           DataObject="{Binding ViewModel}"
+                                                           ValidationMode="PropertyChanged"
+                                                           LayoutType="TextInputLayout"
+                                                           HorizontalOptions="Center">
+                    <dataForm:SfDataForm.TextInputLayoutSettings>
+                        <dataForm:TextInputLayoutSettings ShowHelperText="True"
+                                                          FocusedStroke="{DynamicResource SfDataFormFocusedEditorStroke}"/>
+                    </dataForm:SfDataForm.TextInputLayoutSettings>
+                </dataForm:SfDataForm>
+
+                <Line Grid.Row="2" Background="#F5F5F5" />
+                
+                <HorizontalStackLayout Grid.Row="3"
+                                       HorizontalOptions="End">
+                    <Button x:Name="onlineSmartPaste" 
+                                    Text="Smart Paste" 
+                                    CornerRadius="20"
+                                    FontSize="16"
+                                    Margin="20,0,20,0"
+                                    Clicked="OnSmartPasteButtonClicked"
+                                    HeightRequest="40"/>
+                            
+                    <Button x:Name="submitButton" 
+                                   Text="Submit"
+                                   CornerRadius="20"
+                                   FontSize="16"
+                                   Margin="20,0,20,0"
+                                   Clicked="OnSubmitButtonClicked"
+                                   HeightRequest="40"/>
+                </HorizontalStackLayout>
+            </Grid>
+        </Frame>
+    </Grid>
+</Grid>
+
+
+</ContentPage>
