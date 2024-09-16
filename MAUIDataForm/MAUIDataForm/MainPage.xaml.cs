@@ -10,7 +10,7 @@
         }
 
         string clipboardText;
-        private AzureOpenAIService azureAIService = new AzureOpenAIService();
+        SemanticKernelService semanticKernelService = new SemanticKernelService();
 
         private async void OnSmartPasteButtonClicked(object sender, EventArgs e)
         {
@@ -37,7 +37,7 @@
             $"\n3. Final output must be Json format" +
             $"\n4. No need any explanation or comments in the output" +
             $"\n Please provide the valid JSON object without any additional formatting characters like backticks or newlines";
-            string finalResponse = await this.azureAIService.GetResponseFromGPT(prompt);
+            string finalResponse = await this.semanticKernelService.GetResponseFromGPT(prompt);
             this.ProcessSmartPasteData(finalResponse);
         }
 

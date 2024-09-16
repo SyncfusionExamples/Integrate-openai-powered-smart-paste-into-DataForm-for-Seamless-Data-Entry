@@ -17,7 +17,7 @@
                        MaximumHeightRequest="550"
                        VerticalOptions="Start"
                        HorizontalOptions="Center" 
-                       WidthRequest="550" 
+                       WidthRequest="{OnPlatform MacCatalyst=550, WinUI=450, iOS=400, Android=350}" 
                        Padding="10">
 
             <Grid BackgroundColor="{DynamicResource SfDataFormNormalBackground}">
