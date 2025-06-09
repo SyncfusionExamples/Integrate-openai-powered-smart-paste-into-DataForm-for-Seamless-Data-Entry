@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\GitTea1\\Integrate-openai-powered-smart-paste-into-DataForm-for-Seamless-Data-Entry\\MAUIDataForm\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2DA805FB-AE03-4EDA-A989-165797A3C923}|MAUIDataForm\\MAUIDataForm.csproj|d:\\gittea1\\integrate-openai-powered-smart-paste-into-dataform-for-seamless-data-entry\\mauidataform\\mauidataform\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2DA805FB-AE03-4EDA-A989-165797A3C923}|MAUIDataForm\\MAUIDataForm.csproj|solutionrelative:mauidataform\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "D:\\GitTea1\\Integrate-openai-powered-smart-paste-into-DataForm-for-Seamless-Data-Entry\\MAUIDataForm\\MAUIDataForm\\MainPage.xaml",
+              "RelativeDocumentMoniker": "MAUIDataForm\\MainPage.xaml",
+              "ToolTip": "D:\\GitTea1\\Integrate-openai-powered-smart-paste-into-DataForm-for-Seamless-Data-Entry\\MAUIDataForm\\MAUIDataForm\\MainPage.xaml",
+              "RelativeToolTip": "MAUIDataForm\\MainPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-09T09:13:46.591Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
